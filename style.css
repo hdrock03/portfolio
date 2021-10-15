@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Quicksand:wght@600;700&family=Roboto:wght@700;900&family=Russo+One&display=swap");
+
+:root {
+  --primary-color: #620097;
+  --nav-color: #b992ff;
+  --bcolor: #e9e1ff;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  margin-top: none;
+  background-color: #e9e1ff;
+  margin: 0;
+  padding-left: 30em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: var(--nav-color);
+  width: 30rem;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+#menu-bars {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10000;
+  background-color: var(--primary-color);
+  color: #e9e1ff;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 3rem;
+  display: none;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 5%;
+  min-height: 100vh;
+}
+.row2 {
+  flex: 1 1 50rem;
+  padding: 2rem;
+}
+.row3 {
+  flex: 1 1 25rem;
+}
+#home img {
+  width: 100%;
+}
+#about {
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 5%;
+  min-height: 100vh;
+  text-align: center;
+}
+#project {
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  min-height: 100vh;
+  padding: 1rem 5%;
+}
+#blogs {
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  min-height: 100vh;
+  padding: 1rem 5%;
+}
+
+#navHeading {
+  font-family: "Roboto", sans-serif;
+  color: var(--bcolor);
+  font-size: 3rem;
+}
+#navHeading span {
+  color: var(--primary-color);
+}
+#navList {
+  font-family: "Noto Sans JP", sans-serif;
+  list-style-type: none;
+
+  font-size: 2rem;
+}
+.list {
+  padding-bottom: 5%;
+  color: var(--bcolor);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #620097;
+}
+
+.first {
+  color: var(--primary-color);
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 2rem;
+
+  padding: 0.5rem 0;
+}
+.second {
+  font-family: "Roboto", sans-serif;
+  font-size: 4.5rem;
+  color: var(--primary-color);
+  text-shadow: 1px -1px grey;
+  padding: 0.5rem 0;
+}
+.half {
+  color: #b992ff;
+  text-shadow: 1px -1px grey;
+  font-size: 4.5rem;
+  padding: 0.5rem 0;
+}
+.last {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #b992ff;
+  text-shadow: 0px -1px grey;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+i {
+  color: #e9e1ff;
+  padding-right: 10px;
+  font-size: 17px;
+}
+.contact {
+  color: var(--bcolor);
+  margin: 0.7rem;
+  font-size: 2.5rem;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    padding: 0;
+  }
+  #menu-bars {
+    display: initial;
+  }
+  header {
+    left: -120%;
+  }
+  header.active {
+    left: 0%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  #menu-bars {
+    display: initial;
+  }
+  header {
+    width: 100%;
+  }
+}
+.headings {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
+  font-size: 4rem;
+}
+.s {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.summary {
+  flex: 1.5;
+  color: #7b2cbf;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 5px;
+  text-align: left;
+  width: 60%;
+}
+.summary h3 {
+  font-size: 3.5rem;
+  padding: 0.5rem 0;
+}
+.summary p {
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+}
+.summary h4 {
+  font-size: 2.3rem;
+  padding: 0.3rem 0;
+}
+.summary .imgs {
+  display: grid;
+  grid-template-columns: 20% 30% 20% 30%;
+  font-size: 1.4rem;
+}
+.summary .btn-btn {
+  margin-top: 0;
+}
+.tech {
+  flex: 1;
+  padding: 5px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--nav-color);
+  text-shadow: 0px -1px grey;
+  width: 40%;
+  text-align: center;
+}
+.tech h3 {
+  font-size: 3.5rem;
+  padding: 0.5rem 0;
+}
+.tech-stuff {
+  display: grid;
+  grid-template-columns: 20% 25% 20% 25%;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+.tech-stuff i {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+button {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+.btn-btn {
+  text-decoration: none;
+  padding: 15 px;
+  width: 80px;
+  height: 30px;
+  margin: 6px;
+  /* margin-top: 30px; */
+  font-family: "Noto Sans JP", sans-serif;
+  color: #e9e1ff;
+  font-size: 10px;
+  border-radius: 5px;
+  outline: none;
+  background: linear-gradient(90deg, #755bea, #ff72c0);
+}
+.img-s {
+  height: 30px;
+  width: 30px;
+  padding-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  /* padding:.5rem; */
+  width: 250px;
+  height: 350px;
+  background-color: var(--nav-color);
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  overflow: hidden;
+}
+
+.cardimg {
+  width: 100%;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+.card img {
+  height: 170px;
+  width: 245px;
+}
+.headingcard {
+  font-family: "Roboto", sans-serif;
+  margin-top: 2px;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+.cardp {
+  height: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--bcolor);
+  text-shadow: 0.5px -1px grey;
+  font-size: 1.2rem;
+}
+.btnn {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.b {
+  background-color: var(--primary-color);
+  height: 100px;
+  border-radius: 10px;
+  width: 150px;
+}
+.card .ccontent {
+  height: 120px;
+}
+.container-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blogbox {
+  border-radius: 20px;
+  border: 2px solid #620097;
+  margin-top: 5px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.blogbox h3 {
+  font-family: "Roboto", sans-serif;
+  color: #7b2cbf;
+  text-shadow: 0px -1px black;
+}
+
+.blogbox p {
+  color: #755bea;
+  font-family: "Noto Sans JP", sans-serif;
+}
